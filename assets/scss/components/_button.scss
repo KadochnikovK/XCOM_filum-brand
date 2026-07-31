@@ -1,0 +1,23 @@
+.button {
+    @include flex-center;
+    padding: 0px;
+    width: 100%;
+    // max-width: 350px;
+    height: 48px;
+    background: $color-orange-1;
+    border-radius: $radius;
+    text-decoration: none;
+    color: $color-bright-1;
+    font-weight: 600;
+    box-shadow: $shadow;
+
+    &--outline {
+        background: none;
+        color: $color-blue-1;
+        border: 2px solid $color-blue-1;
+    }
+
+    &--blue {
+        background: $color-blue-1;
+    }
+}

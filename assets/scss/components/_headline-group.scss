@@ -1,0 +1,44 @@
+.headline-group {
+    display: flex;
+    flex-direction: column;
+    gap: $size-base;
+
+    &__title {
+        font-weight: 700;
+        font-size: $size-3xl;
+
+        color: $color-blue-1;
+    }
+
+    &__subtitle {
+        border-bottom: 2px solid $color-grey-1;
+        padding-block: 4px;
+        font-weight: 500;
+        font-size: $size-sm;
+
+        color: $color-grey-1;
+        max-width: max-content;
+        padding-left: $size-sm;
+        position: relative;
+        line-height: 15px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            width: calc($size-sm / 2);
+            height: calc($size-sm / 2);
+            border-radius: 10pc;
+            background: $color-grey-1;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: $size-base;
+
+        color: $color-blue-1;
+    }
+}

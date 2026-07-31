@@ -1,0 +1,47 @@
+// цвета
+$color-blue-1: #0050a5;
+$color-blue-2: #0c4392;
+$color-blue-3: #003580;
+
+$color-orange-1: #ff6b00;
+$color-orange-2: #e66000;
+$color-orange-3: #cc5500;
+
+$color-bright-1: #ffffff;
+$color-bright-2: #e8f0f8;
+$color-bright-3: #e4edf6;
+$color-bright-4: #f2e4dc;
+$color-bright-5: #f0f5fb;
+
+$color-grey-1: #7da6d2;
+$color-grey-2: #777777;
+$color-grey-3: #222222;
+
+$gradient-1: linear-gradient(155.23deg, #bfe1ff 8.5%, #bfe0ff 41.7%, #add9ff 91.5%);
+
+// размеры
+$size-3xs: 0.5625rem; // 9
+$size-2xs: 0.625rem; // 10
+$size-xs: 0.6875rem; // 11
+$size-sm: 0.75rem; // 12
+$size-md: 0.875rem; // 14
+$size-base: 1rem; // 16
+$size-lg: 1.125rem; // 18
+$size-xl: 1.25rem; // 20
+$size-2xl: 2rem; // 32
+$size-3xl: 2.25rem; // 36
+$size-4xl: 2.5rem; // 40
+
+$shadow: 0px 3px 4px rgba(75, 36, 7, 0.15);
+$shadow-blue: 0px 2px 8.3px rgba(9, 42, 76, 0.35);
+
+$radius: 32px;
+$radius-2: 16px;
+
+$max-width: 1440px;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
