@@ -21,10 +21,14 @@
         justify-content: center;
         height: 40px;
         background: $color-blue-1;
-        box-shadow: $shadow-blue;
         border-radius: 35px;
         width: max-content;
         aspect-ratio: 1;
+        transition: all .3s;
+
+        &:hover {
+            box-shadow: $shadow-blue;
+        }
 
         &--outline {
             background: $color-bright-4;

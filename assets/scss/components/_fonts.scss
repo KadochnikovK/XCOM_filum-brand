@@ -19,6 +19,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: "Inter";
     src:
@@ -48,6 +49,17 @@
         url("./../fonts/Inter-ExtraBold.woff") format("woff"),
         url("./../fonts/Inter-ExtraBold.ttf") format("ttf");
     font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src:
+        url("./../fonts/Inter-Black.woff2") format("woff2"),
+        url("./../fonts/Inter-Black.woff") format("woff"),
+        url("./../fonts/Inter-Black.ttf") format("ttf");
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }

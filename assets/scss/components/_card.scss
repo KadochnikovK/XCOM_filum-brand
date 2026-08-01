@@ -4,6 +4,7 @@
     width: 100%;
     overflow: hidden;
     background: $color-bright-3;
+    position: relative;
 
     &--bg-bright {
         background: rgba(255, 255, 255, 0.1);
@@ -20,16 +21,27 @@
         &--padding-small {
             padding: 6px 12px;
         }
+
+        &--gap-big {
+            gap: 12px;
+        }
+
+        &--gap-extra {
+            gap: 16px;
+        }
     }
 
     &__image {
         width: 100%;
+        max-height: 200px;
         border-radius: 0 0 $radius-2 $radius-2;
+        object-fit: cover;
     }
 
     &--orange-border {
         border-color: $color-orange-1;
     }
+
     &--bright-border {
         border-color: $color-bright-3;
     }
@@ -45,10 +57,24 @@
         align-items: center;
         justify-content: center;
         padding: 2px 8px;
-        border-radius: 10pc;
+        border-radius: $radius-3;
         font-size: $size-sm;
         font-weight: 500;
         line-height: 1;
+        height: 20px;
+
+        &--bg-bright {
+            background: $color-bright-1;
+            color: $color-blue-1;
+        }
+
+        &--bold {
+            font-weight: 700;
+        }
+
+        &--big {
+            height: 24px;
+        }
     }
 
     &__text {
@@ -58,6 +84,7 @@
             font-size: $size-xl;
             font-weight: 700;
         }
+
         &--orange {
             color: $color-orange-1;
         }
@@ -70,7 +97,9 @@
     &__text-group {
         width: 100%;
         display: flex;
-        gap: 6px;
+        gap: 12px;
+        align-items: center;
+        position: relative;
 
         &--space-between {
             justify-content: space-between;
@@ -81,6 +110,7 @@
         .card__text {
             font-size: $size-md;
         }
+
         .card__text--main {
             font-size: $size-3xl;
             font-weight: 800;

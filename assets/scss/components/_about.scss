@@ -1,15 +1,23 @@
 .about {
     &__cards {
+        display: flex;
+        flex-direction: column;
     }
 
     &__card-group {
         margin-left: 11px;
         display: flex;
         gap: 28px;
+        padding-bottom: 24px;
+
+        &:not(:nth-last-child(1)) {
+            border-left: 2px solid $color-orange-1;
+        }
     }
 
     &__image {
         position: relative;
+
         img {
             width: 100%;
             max-height: 50vh;
@@ -18,4 +26,6 @@
             border-radius: $radius-2;
         }
     }
+
+
 }

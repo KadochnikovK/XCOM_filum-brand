@@ -1,24 +1,37 @@
 .hero {
-    background: $gradient-1;
+    background: url('./../images/bg-cell.png'), $gradient-1;
+    background-position: center, 0 0;
+    // background-size: auto 100%, 100% 100%;
+    background-repeat: repeat, repeat;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
 
+
     img {
         line-height: 0;
         transform: translateY(2%);
-    }
-    &__content {
-    }
-    // &__image {
-    //     position: absolute;
-    //     inset: 0;
-    //     top: auto;
 
-    //     img {
-    //         width: 100%;
-    //         transform: scale(1.05);
-    //     }
-    // }
+
+
+
+
+    }
+
+    &__image {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: $gradient-2;
+        }
+
+    }
+
+    &__content {}
+
+
 }

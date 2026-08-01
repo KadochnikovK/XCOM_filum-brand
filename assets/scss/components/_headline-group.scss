@@ -33,8 +33,18 @@
             height: calc($size-sm / 2);
             border-radius: 10pc;
             background: $color-grey-1;
+
+
+        }
+
+        &--bright {
+            &::after {
+                background: $color-bright-1;
+            }
+
         }
     }
+
     &__text {
         font-weight: 400;
         font-size: $size-base;

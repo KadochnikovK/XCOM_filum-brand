@@ -8,6 +8,10 @@ body {
     background: $color-bright-5;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -19,14 +23,27 @@ body {
         display: grid;
         padding: 32px 20px;
         gap: 20px;
+
+        &--flat {
+            padding-block: 0;
+        }
     }
 
-    &--blue {
+
+
+    &--bg-blue {
         background-color: $color-blue-1;
+
         * {
             color: $color-bright-1 !important;
             border-color: $color-bright-1 !important;
+
         }
+
+    }
+
+    &--bg-bright {
+        background: $color-bright-2;
     }
 }
 
@@ -38,14 +55,35 @@ body {
 
 .label {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
+    gap: 8px;
     padding: 11px 17px;
     border: 1px solid $color-bright-4;
     background: $color-bright-1;
     border-radius: $radius-2;
     width: max-content;
     position: relative;
+
+    &--bg-bright {
+        background: $color-bright-3;
+    }
+
+    &--border-grey {
+        border-color: $color-grey-1;
+    }
+
+    &--color-blue {
+        * {
+            color: $color-blue-1 !important;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+
 
     &__text {
         font-size: $size-2xs;
@@ -85,4 +123,74 @@ body {
     &--2 {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    &--gap-big {
+        gap: 20px;
+    }
+}
+
+.icon-block {
+    border-radius: $radius-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    aspect-ratio: 1;
+    background: $color-grey-1;
+
+    &--small {
+        width: 28px;
+        height: 28px;
+        border-radius: $radius-3;
+    }
+
+    &__circle {
+        width: 10px;
+        height: 10px;
+        background: $color-blue-1;
+        border-radius: 10pc;
+    }
+
+    &--orange {
+        background: $color-bright-4;
+        border: 1px solid $color-orange-1;
+
+        .icon-block__circle {
+            background: $color-orange-1;
+        }
+    }
+
+    &--bright {
+        background: $color-bright-1;
+        color: $color-blue-1;
+    }
+
+    &--blue {
+        background: $color-blue-1;
+        color: $color-bright-1;
+    }
+
+    &--opacity {
+        background: rgba(255, 255, 255, .1);
+    }
+}
+
+.big-number {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 100px;
+    color: $color-bright-1;
+    text-shadow: $shadow;
+    transform: translateX(40%);
+    // display: flex;
+}
+
+.divider {
+
+    width: 100%;
+    border-bottom: 2px solid $color-grey-1;
 }
