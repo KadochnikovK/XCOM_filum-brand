@@ -47,8 +47,22 @@
 
     &__text {
         font-weight: 400;
-        font-size: $size-base;
+        font-size: $size-sm;
 
         color: $color-blue-1;
+    }
+
+    @include screen('desktop') {
+        .headline-group__title {
+            font-size: $size-4xl;
+        }
+
+        .headline-group__subtitle {
+            font-size: $size-md;
+        }
+
+        .headline-group__text {
+            font-size: $size-base;
+        }
     }
 }

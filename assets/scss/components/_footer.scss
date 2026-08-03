@@ -12,6 +12,18 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+
+
+
+        @include screen('desktop') {
+            grid-column: span 2;
+        }
+
+        &--main {
+            @include screen('desktop') {
+                grid-column: span 6;
+            }
+        }
     }
 
     &__link-block {

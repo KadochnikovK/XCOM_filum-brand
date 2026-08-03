@@ -10,3 +10,19 @@
 @import "./components/map";
 @import "./components/footer";
 @import "./components/menu";
+@import "./components/action";
+
+.mobile-only {
+    @include screen('desktop') {
+        display: none;
+    }
+}
+
+.desktop-only {
+
+    display: none;
+
+    @include screen('desktop') {
+        display: block;
+    }
+}

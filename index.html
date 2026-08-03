@@ -23,34 +23,35 @@
       </div>
     </div>
   </header>
-
-  <nav class="container menu ">
-    <div class="container__content menu__content">
-      <a href="#" class=" menu__item">
-        <img src="assets/images/icon-menu-main.svg" alt="">
-        <div>Главная</div>
-      </a>
-      <a href="#" class="menu__item menu__item--active">
-        <img src="assets/images/icon-menu-catalog.svg" alt="">
-        <div>Каталог</div>
-      </a>
-      <a href="#" class="menu__item">
-        <img src="assets/images/icon-menu-favorite.svg" alt="">
-        <div>Избранные</div>
-      </a>
-      <a href="#" class="menu__item">
-        <img src="assets/images/icon-menu-profile.svg" alt="">
-        <div>Кабинет</div>
-      </a>
-      <a href="#" class="menu__item">
-        <img src="assets/images/icon-menu-compare.svg" alt="">
-        <div>Сравнение</div>
-      </a>
-    </div>
-  </nav>
+  <div class="mobile-only">
+    <nav class="container menu ">
+      <div class="container__content menu__content">
+        <a href="#" class=" menu__item">
+          <img src="assets/images/icon-menu-main.svg" alt="">
+          <div>Главная</div>
+        </a>
+        <a href="#" class="menu__item menu__item--active">
+          <img src="assets/images/icon-menu-catalog.svg" alt="">
+          <div>Каталог</div>
+        </a>
+        <a href="#" class="menu__item">
+          <img src="assets/images/icon-menu-favorite.svg" alt="">
+          <div>Избранные</div>
+        </a>
+        <a href="#" class="menu__item">
+          <img src="assets/images/icon-menu-profile.svg" alt="">
+          <div>Кабинет</div>
+        </a>
+        <a href="#" class="menu__item">
+          <img src="assets/images/icon-menu-compare.svg" alt="">
+          <div>Сравнение</div>
+        </a>
+      </div>
+    </nav>
+  </div>
   <main>
     <section class="container hero">
-      <div class="container__content hero__content">
+      <div class="container__content hero__content grid grid--2-desktop">
         <div class="hero__text">
           <div class="headline-group">
             <div class="headline-group__subtitle">Надёжный производитель периферии</div>
@@ -60,23 +61,62 @@
               использования. Мы делаем упор на продуманный дизайн, бесперебойные поставки и строгий
               контроль качества.
             </div>
-            <a href="#" class="button">Стать партнёром</a>
-            <a href="#" class="button button--outline">Смотреть сертификаты</a>
+            <div class="buttons">
+              <a href="#" class="button">Стать партнёром</a>
+              <a href="#" class="button button--outline">Смотреть сертификаты</a>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-only">
+          <div class="hero__image">
+            <div class="label label--without-bg  label--border-grey"
+              style="position: absolute; bottom: 24px; left: 22px; z-index: 2;">
+              <div class="icon-block icon-block--bright icon-block--small">
+                <img src="assets/images/icon-connect.svg" alt="">
+              </div>
+              <div class="label__content">
+                <div class="label__text label__text--bright label__text--main">2.4GHz / BT 5.0</div>
+                <div class="label__text label__text--bright ">Беспроводная клавиатура</div>
+              </div>
+            </div>
+            <div class="label label--image-bg  label--border-grey"
+              style="position: absolute; top: -73px; right: 40px; z-index: 2; --bg-image: url('./../images/image-mouse.png') ">
+
+              <div class=" label__content">
+                <div class="label__text label__text--big label__text--bright " style="margin-top: auto;">FL-GMW15-BK-L
+                </div>
+                <div class="label__text label__text--main-big label__text--bright label__text--main">Мышь игровая</div>
+
+              </div>
+            </div>
+            <div class="label label--border-bright"
+              style="position: absolute; top: 110%; left: 60%; transform: translateX(-40%);">
+              <div class="icon-block icon-block--grey icon-block--small">
+                <div class="icon-block__circle"></div>
+              </div>
+              <div class="label__content">
+                <div class="label__text label__text--main">Эргономика</div>
+                <div class="label__text">ISO сертификат</div>
+              </div>
+            </div>
+            <img class="hero__image-content" src="assets/images/image-keyboard.png" alt="" />
           </div>
         </div>
       </div>
-      <div class="hero__image">
-        <div class="label label--border-grey label--bg-bright label--color-blue"
-          style="position: absolute; top: 0; left: 50%; transform: translateX(-40%);">
-          <div class="icon-block icon-block--small">
-            <div class="icon-block__circle"></div>
+      <div class="mobile-only">
+        <div class="hero__image">
+          <div class="label label--border-grey label--bg-bright label--color-blue"
+            style="position: absolute; top: 0; left: 50%; transform: translateX(-40%);">
+            <div class="icon-block icon-block--small">
+              <div class="icon-block__circle"></div>
+            </div>
+            <div class="label__content">
+              <div class="label__text label__text--main">2.4GHz / BT 5.0</div>
+              <div class="label__text">Беспроводная клавиатура</div>
+            </div>
           </div>
-          <div class="label__content">
-            <div class="label__text label__text--main">2.4GHz / BT 5.0</div>
-            <div class="label__text">Беспроводная клавиатура</div>
-          </div>
+          <img class="hero__image-content" src="assets/images/image-keyboard.png" alt="" />
         </div>
-        <img src="assets/images/image-keyboard.png" alt="" />
       </div>
     </section>
     <section class="container about">
@@ -85,80 +125,86 @@
           <div class="headline-group__subtitle">О бренде</div>
           <div class="headline-group__title">История: от идеи до широкой линейки</div>
         </div>
-
-        <div class="about__image">
-          <div class="label" style="position: absolute; top: 18px; right: 28px">
-            <div class="label__content">
-              <div class="label__text label__text--main label__text--orange">ISO 9001</div>
-              <div class="label__text">Сертифицировано</div>
-            </div>
-          </div>
-          <div class="label" style="position: absolute; bottom: 28px; left: 22px">
-            <div class="label__content">
-              <div class="label__text label__text--main">500K ед./год</div>
-              <div class="label__text">мощность производства</div>
-            </div>
-          </div>
-          <img src="assets/images/image-setup.png" alt="" />
-        </div>
-        <div class="text-block">
-          <div class="paragraph">
-            Бренд появился в ответ на потребность корпоративных клиентов в периферийных устройствах, которые выдержат
-            интенсивную эксплуатацию при массовом оснащении офисов и при этом комфортны в
-            ежедневном личном использовании.
-          </div>
-          <div class="paragraph">
-            В приоритете устройства с бескомпромиссной надежностью, эргономикой и совместимостью, такие как клавиатуры,
-            мыши, комбинированные наборы, кабельные решения и аксессуары для рабочих мест.
-          </div>
-          <div class="paragraph">
-            Сегодня ассортимент развивается по принципу «ничего лишнего»: каждая модель закрывает конкретный сценарий,
-            проходит тестирование, а для партнёров подготовлена понятная документация.
-          </div>
-        </div>
-        <div class="about__cards">
-          <div class="about__card-group">
-            <div class="icon-block icon-block--small icon-block--orange" style="transform: translateX(-50%);">
-              <div class="icon-block__circle"></div>
-            </div>
-            <div class="card card--orange-border">
-              <div class="card__content">
-                <div class="card__text-group">
-                  <div class="card__text card__text--main card__text--extra card__text--orange">2018</div>
-                  <div class="card__label">год</div>
-                </div>
-                <div class="card__text card__text--main">Первые поставки</div>
-                <div class="card__text">Первые разработки для корпоративного рынка.</div>
+        <div class="grid  grid--3-desktop grid--gap-big">
+          <div class="about__image">
+            <div class="label" style="position: absolute; top: 18px; right: 28px">
+              <div class="label__content">
+                <div class="label__text label__text--main label__text--orange">ISO 9001</div>
+                <div class="label__text">Сертифицировано</div>
               </div>
             </div>
-          </div>
-          <div class="about__card-group">
-            <div class="icon-block icon-block--small icon-block--orange" style="transform: translateX(-50%);">
-              <div class="icon-block__circle"></div>
-            </div>
-            <div class="card card--orange-border">
-              <div class="card__content">
-                <div class="card__text-group">
-                  <div class="card__text card__text--main card__text--extra card__text--orange">2021</div>
-                  <div class="card__label">год</div>
-                </div>
-                <div class="card__text card__text--main">Расширение ассортимента</div>
-                <div class="card__text">Запуск серии клавиатур и мышей для офисов.</div>
+            <div class="label" style="position: absolute; bottom: 28px; left: 22px">
+              <div class="label__content">
+                <div class="label__text label__text--main">500K ед./год</div>
+                <div class="label__text">мощность производства</div>
               </div>
             </div>
+            <img src="assets/images/image-setup.png" alt="" />
           </div>
-          <div class="about__card-group">
-            <div class="icon-block icon-block--small icon-block--orange" style="transform: translateX(-50%);">
-              <div class="icon-block__circle"></div>
+          <div class="about__text">
+            <div class="text-block">
+              <div class="paragraph">
+                Бренд появился в ответ на потребность корпоративных клиентов в периферийных устройствах, которые
+                выдержат
+                интенсивную эксплуатацию при массовом оснащении офисов и при этом комфортны в
+                ежедневном личном использовании.
+              </div>
+              <div class="paragraph">
+                В приоритете устройства с бескомпромиссной надежностью, эргономикой и совместимостью, такие как
+                клавиатуры,
+                мыши, комбинированные наборы, кабельные решения и аксессуары для рабочих мест.
+              </div>
+              <div class="paragraph">
+                Сегодня ассортимент развивается по принципу «ничего лишнего»: каждая модель закрывает конкретный
+                сценарий,
+                проходит тестирование, а для партнёров подготовлена понятная документация.
+              </div>
             </div>
-            <div class="card card--orange-border">
-              <div class="card__content">
-                <div class="card__text-group">
-                  <div class="card__text card__text--main card__text--extra card__text--orange">2024</div>
-                  <div class="card__label">год</div>
+            <div class="about__cards">
+              <div class="about__card-group">
+                <div class="icon-block icon-block--small icon-block--orange" style="transform: translateX(-50%);">
+                  <div class="icon-block__circle"></div>
                 </div>
-                <div class="card__text card__text--main">Единый стандарт качества</div>
-                <div class="card__text">Внедрены регулярные проверки партий, упаковки и сопроводительных материалов.
+                <div class="card card--orange-border">
+                  <div class="card__content">
+                    <div class="card__text-group">
+                      <div class="card__text card__text--main card__text--extra card__text--orange">2018</div>
+                      <div class="card__label">год</div>
+                    </div>
+                    <div class="card__text card__text--main">Первые поставки</div>
+                    <div class="card__text">Первые разработки для корпоративного рынка.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="about__card-group">
+                <div class="icon-block icon-block--small icon-block--orange" style="transform: translateX(-50%);">
+                  <div class="icon-block__circle"></div>
+                </div>
+                <div class="card card--orange-border">
+                  <div class="card__content">
+                    <div class="card__text-group">
+                      <div class="card__text card__text--main card__text--extra card__text--orange">2021</div>
+                      <div class="card__label">год</div>
+                    </div>
+                    <div class="card__text card__text--main">Расширение ассортимента</div>
+                    <div class="card__text">Запуск серии клавиатур и мышей для офисов.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="about__card-group">
+                <div class="icon-block icon-block--small icon-block--orange" style="transform: translateX(-50%);">
+                  <div class="icon-block__circle"></div>
+                </div>
+                <div class="card card--orange-border">
+                  <div class="card__content">
+                    <div class="card__text-group">
+                      <div class="card__text card__text--main card__text--extra card__text--orange">2024</div>
+                      <div class="card__label">год</div>
+                    </div>
+                    <div class="card__text card__text--main">Единый стандарт качества</div>
+                    <div class="card__text">Внедрены регулярные проверки партий, упаковки и сопроводительных материалов.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -176,46 +222,50 @@
           <div class="headline-group__text">Прозрачный путь устройства: от выбора компонентов до финальной проверки
             перед отгрузкой</div>
         </div>
-
-        <div class="card">
-          <div class="card__content card__content--gap-big">
-            <div class="card__text-group">
-              <div class="icon-block icon-block--bright">
-                <img src="assets/images/icon-production-01.svg" style="transform: translateX(5%) translateY(5%)" alt="">
+        <div class="grid grid--3-desktop">
+          <div class="card">
+            <div class="card__content card__content--gap-big">
+              <div class="card__text-group">
+                <div class="icon-block icon-block--bright">
+                  <img src="assets/images/icon-production-01.svg" style="transform: translateX(5%) translateY(5%)"
+                    alt="">
+                </div>
+                <div class="card__label card__label--bg-bright card__label--bold" style="margin-top: auto;">Шаг 01</div>
+                <div class="big-number">1 </div>
               </div>
-              <div class="card__label card__label--bg-bright card__label--bold" style="margin-top: auto;">Шаг 01</div>
-              <div class="big-number">1 </div>
+              <div class="card__text card__text--main">Первые поставки</div>
+              <div class="card__text">Первые разработки для корпоративного рынка.</div>
             </div>
-            <div class="card__text card__text--main">Первые поставки</div>
-            <div class="card__text">Первые разработки для корпоративного рынка.</div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card__content card__content--gap-big">
-            <div class="card__text-group">
-              <div class="icon-block icon-block--bright">
-                <img src="assets/images/icon-production-02.svg" style="transform: translateX(5%) translateY(5%)" alt="">
+          <div class="card">
+            <div class="card__content card__content--gap-big">
+              <div class="card__text-group">
+                <div class="icon-block icon-block--bright">
+                  <img src="assets/images/icon-production-02.svg" style="transform: translateX(5%) translateY(5%)"
+                    alt="">
+                </div>
+                <div class="card__label card__label--bg-bright card__label--bold" style="margin-top: auto;">Шаг 02</div>
+                <div class="big-number">2</div>
               </div>
-              <div class="card__label card__label--bg-bright card__label--bold" style="margin-top: auto;">Шаг 02</div>
-              <div class="big-number">2</div>
+              <div class="card__text card__text--main">Расширение ассортимента</div>
+              <div class="card__text">Запуск серии клавиатур и мышей для офисов.</div>
             </div>
-            <div class="card__text card__text--main">Расширение ассортимента</div>
-            <div class="card__text">Запуск серии клавиатур и мышей для офисов.</div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="card__content card__content--gap-big">
-            <div class="card__text-group">
-              <div class="icon-block icon-block--bright">
-                <img src="assets/images/icon-production-03.svg" style="transform: translateX(5%) translateY(5%)" alt="">
+          <div class="card">
+            <div class="card__content card__content--gap-big">
+              <div class="card__text-group">
+                <div class="icon-block icon-block--bright">
+                  <img src="assets/images/icon-production-03.svg" style="transform: translateX(5%) translateY(5%)"
+                    alt="">
+                </div>
+                <div class="card__label card__label--bg-bright card__label--bold" style="margin-top: auto;">Шаг 03</div>
+                <div class="big-number">3</div>
               </div>
-              <div class="card__label card__label--bg-bright card__label--bold" style="margin-top: auto;">Шаг 03</div>
-              <div class="big-number">3</div>
+              <div class="card__text card__text--main">Единый стандарт качества</div>
+              <div class="card__text">Внедрены регулярные проверки партий, упаковки и сопроводительных материалов.</div>
             </div>
-            <div class="card__text card__text--main">Единый стандарт качества</div>
-            <div class="card__text">Внедрены регулярные проверки партий, упаковки и сопроводительных материалов.</div>
           </div>
         </div>
       </div>
@@ -229,11 +279,58 @@
           <div class="headline-group__text">Мы выстраиваем логистику поставок на регулярных маршрутах и надёжной
             партнёрской сети, чтобы устройства попадали к клиентам без лишних согласований</div>
         </div>
-        <div class="map__image">
-          <img src="assets/images/image-map.png" alt="" />
+        <div class="grid grid--3-desktop grid--gap-big">
+          <div class="desktop-only">
+            <div class="flex flex--column">
+              <div class="card card--radius-big card--max-content">
+                <div class="card__content card__content--padding-md card__content--gap-big">
+                  <div class="card__text-group card__text-group--space-between">
+                    <div class="card__text card__text--main">Москва и область</div>
+                    <div class="card__text card__text--main">1–2 дня</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card  card--radius-big card--max-content">
+                <div class="card__content card__content--padding-md card__content--gap-big">
+                  <div class="card__text-group card__text-group--space-between">
+                    <div class="card__text card__text--main">Санкт-Петербург</div>
+                    <div class="card__text card__text--main">2–3 дня</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card  card--radius-big card--max-content">
+                <div class="card__content card__content--padding-md card__content--gap-big">
+                  <div class="card__text-group card__text-group--space-between">
+                    <div class="card__text card__text--main">Центральная Россия</div>
+                    <div class="card__text card__text--main">3–5 дней</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card  card--radius-big card--max-content">
+                <div class="card__content card__content--padding-md card__content--gap-big">
+                  <div class="card__text-group card__text-group--space-between">
+                    <div class="card__text card__text--main">Урал и Сибирь</div>
+                    <div class="card__text card__text--main">от 5 дней</div>
+                  </div>
+                </div>
+              </div>
+              <div class="card card--radius-big  card--max-content">
+                <div class="card__content card__content--padding-md card__content--gap-big">
+                  <div class="card__text-group card__text-group--space-between">
+                    <div class="card__text card__text--main">Южные регионы</div>
+                    <div class="card__text card__text--main">от 4 дней</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map__image">
+            <img src="assets/images/image-map.png" alt="" />
+          </div>
         </div>
 
-        <div class="grid grid--2">
+
+        <div class="grid grid--2 mobile-only">
           <div class="label label--big">
             <div class="label__content">
               <div class="label__text label__text--main">Москва и МО</div>
@@ -270,44 +367,46 @@
           <div class="headline-group__text">Мы выделили четыре ключевых принципа работы, которые делают сотрудничество с
             Filum стабильным, прозрачным и выгодным для вашего бизнеса</div>
         </div>
-
-        <div class="card" style="padding-bottom: 100px;">
-          <img src="assets/images/partner-01.png"
-            style="position: absolute; bottom: 0; right: 0; transform: translateX(20%) translateY(5%);" alt="">
-          <div class="card__content card__content--gap-extra" style="padding-right: 30%;">
-            <div class="card__text card__text--main">Стабильное наличие</div>
-            <div class="card__text">Популярные позиции всегда в наличии на складе, что гарантирует бесперебойное
-              исполнение повторных и проектных заявок без длительных пауз.</div>
+        <div class="grid grid--2-desktop">
+          <div class="card" style="padding-bottom: 100px;">
+            <img src="assets/images/partner-01.png"
+              style="position: absolute; bottom: 0; right: 0; transform: translateX(20%) translateY(5%);" alt="">
+            <div class="card__content card__content--gap-extra" style="padding-right: 30%;">
+              <div class="card__text card__text--main">Стабильное наличие</div>
+              <div class="card__text">Популярные позиции всегда в наличии на складе, что гарантирует бесперебойное
+                исполнение повторных и проектных заявок без длительных пауз.</div>
+            </div>
           </div>
-        </div>
 
-        <div class="card" style="padding-bottom: 100px;">
-          <img src="assets/images/partner-02.png"
-            style="position: absolute; bottom: 0; right: 0; transform: translateX(20%) translateY(5%);" alt="">
-          <div class="card__content card__content--gap-extra" style="padding-right: 30%;">
-            <div class="card__text card__text--main">Понятная линейка</div>
-            <div class="card__text">Модели легко сравнивать по назначению, подключению, цвету, форм-фактору и уровню
-              оснащения.</div>
+          <div class="card" style="padding-bottom: 100px;">
+            <img src="assets/images/partner-02.png"
+              style="position: absolute; bottom: 0; right: 0; transform: translateX(20%) translateY(5%);" alt="">
+            <div class="card__content card__content--gap-extra" style="padding-right: 30%;">
+              <div class="card__text card__text--main">Понятная линейка</div>
+              <div class="card__text">Модели легко сравнивать по назначению, подключению, цвету, форм-фактору и уровню
+                оснащения.</div>
+            </div>
           </div>
-        </div>
 
-        <div class="card" style="padding-bottom: 100px;">
-          <img src="assets/images/partner-03.png"
-            style="position: absolute; bottom: 0; right: 0; transform: translateX(20%) translateY(5%);" alt="">
-          <div class="card__content card__content--gap-extra" style="padding-right: 30%;">
-            <div class="card__text card__text--main">Гибкая логистика</div>
-            <div class="card__text">Мы адаптируем поставки под офисы, филиалы, тендерные сроки и сезонные обновления
-              рабочих мест.</div>
+          <div class="card" style="padding-bottom: 100px;">
+            <img src="assets/images/partner-03.png"
+              style="position: absolute; bottom: 0; right: 0; transform: translateX(20%) translateY(5%);" alt="">
+            <div class="card__content card__content--gap-extra" style="padding-right: 30%;">
+              <div class="card__text card__text--main">Гибкая логистика</div>
+              <div class="card__text">Мы адаптируем поставки под офисы, филиалы, тендерные сроки и сезонные обновления
+                рабочих мест.</div>
+            </div>
           </div>
-        </div>
 
-        <div class="card" style="padding-bottom: 100px;">
-          <img src="assets/images/partner-04.png"
-            style="position: absolute; bottom: 0; right: 0; transform: translateX(20%) translateY(10%);" alt="">
-          <div class="card__content card__content--gap-extra" style="padding-right: 30%;">
-            <div class="card__text card__text--main">Поддержка продаж</div>
-            <div class="card__text">Мы предоставляем партнёрам описания, визуалы, характеристики и готовые материалы для
-              упрощённого размещения товаров.</div>
+          <div class="card" style="padding-bottom: 100px;">
+            <img src="assets/images/partner-04.png"
+              style="position: absolute; bottom: 0; right: 0; transform: translateX(20%) translateY(10%);" alt="">
+            <div class="card__content card__content--gap-extra" style="padding-right: 30%;">
+              <div class="card__text card__text--main">Поддержка продаж</div>
+              <div class="card__text">Мы предоставляем партнёрам описания, визуалы, характеристики и готовые материалы
+                для
+                упрощённого размещения товаров.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -319,7 +418,7 @@
           <div class="headline-group__subtitle">Цифры</div>
           <div class="headline-group__title">Масштаб, которому можно доверять</div>
         </div>
-        <div class="grid grid--2">
+        <div class="grid grid--2 grid--4-desktop">
           <div class="card card--big">
             <div class="card__content">
               <div class="card__text card__text--main">120+</div>
@@ -356,128 +455,264 @@
         <div class="headline-group">
           <div class="headline-group__subtitle">Сертификаты</div>
           <div class="headline-group__title">Сертификаты и подтверждающие документы</div>
+
         </div>
         <div class="grid grid--2">
-          <div class="card">
+          <div class="card card--row-desktop">
             <img src="assets/images/certificate-01.png" class="card__image"
               style="position: relative; top: 0; left: 0; right: 0" alt="" />
-            <div class="card__content card__content--small">
+            <div class="card__content  card__content--after  card__content--small">
               <div class="card__text card__text--main">120+</div>
-              <div class="card__text">товарных позиций в актуальной линейке периферии и аксессуаров</div>
+              <div class="card__text" style="margin-bottom: auto;">товарных позиций в актуальной линейке периферии и аксессуаров</div>
+              <div class="desktop-only">
+                <div class="card__text-group card__text-group--space-between">
+                  <a href="#" class="button button--max-content">Скачать пример</a>
+                  <div class="card__text card__text--orange card__text--main">PDF</div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--row-desktop">
             <img src="assets/images/certificate-02.png" class="card__image"
               style="position: relative; top: 0; left: 0; right: 0" alt="" />
-            <div class="card__content card__content--small">
+            <div class="card__content  card__content--after card__content--small">
               <div class="card__text card__text--main card__text--orange">8 лет</div>
-              <div class="card__text">опыт поставок корпоративным и розничным клиентам</div>
+              <div class="card__text" style="margin-bottom: auto;">опыт поставок корпоративным и розничным клиентам</div>
+              <div class="desktop-only">
+                <div class="card__text-group card__text-group--space-between" >
+                  <a href="#" class="button button--max-content">Запросить архив</a>
+                  <div class="card__text card__text--orange card__text--main">ZIP</div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--row-desktop">
             <img src="assets/images/certificate-03.png" class="card__image"
               style="position: relative; top: 0; left: 0; right: 0" alt="" />
-            <div class="card__content card__content--small">
+            <div class="card__content card__content--after  card__content--small">
               <div class="card__text card__text--main card__text--orange">247</div>
-              <div class="card__text">доступность карточек, материалов и справочной информации для партнёров</div>
+              <div class="card__text" style="margin-bottom: auto;">доступность карточек, материалов и справочной информации для партнёров</div>
+              <div class="desktop-only">
+                <div class="card__text-group card__text-group--space-between">
+                  <a href="#" class="button button--max-content">Получить файл</a>
+                  <div class="card__text card__text--orange card__text--main">XLS</div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--row-desktop">
             <img src="assets/images/certificate-04.png" class="card__image"
               style="position: relative; top: 0; left: 0; right: 0" alt="" />
-            <div class="card__content card__content--small">
+            <div class="card__content card__content--after  card__content--small">
               <div class="card__text card__text--main">3K+</div>
-              <div class="card__text">условных проектных отгрузок для офисов, школ и сервисных команд оснащено</div>
+              <div class="card__text" style="margin-bottom: auto;">условных проектных отгрузок для офисов, школ и сервисных команд оснащено</div>
+              <div class="desktop-only">
+                <div class="card__text-group card__text-group--space-between " >
+                  <a href="#" class="button button--max-content">Открыть</a>
+                  <div class="card__text card__text--orange card__text--main">PDF</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <a href="#" class="button button--blue">Смотреть все документы</a>
+        <div class="mobile-only">
+          <a href="#" class="button button--blue">Смотреть все документы</a>
+        </div>
+        <div class="desktop-only">
+          <div class="card card--without-border">
+            <div class="card__content card__content--small">
+              <div class="card__text-group">
+                <div class="icon-block icon-block--bright-2 icon-block--small">
+                  <img src="assets/images/icon-offer-04-color.svg" style="transform: translateX(5%) translateY(5%)"
+                    alt="">
+                </div>
+                <div class="card__text-group card__text-group--column">
+                  <div class="card__text card__text--main">Маркетинг
+                  </div>
+                  <div class="card__text">Фото, видео, брендированные материалы</div>
+                </div>
+                <a href="#" class="button button--blue" style="margin-left: auto;">Запросить документы</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
+    <div class="mobile-only">
+      <section class="container container--bg-blue action">
+        <div class="container__content action__content">
+          <div class="headline-group">
+            <div class="headline-group__subtitle headline-group__subtitle--bright">Оставьте заявку</div>
+            <div class="headline-group__title">Условия сотрудничества</div>
+            <div class="headline-group__text">Гибкие условия для дилеров и системных интеграторов</div>
+          </div>
 
-    <section class="container container--bg-blue action">
-      <div class="container__content action__content">
-        <div class="headline-group">
-          <div class="headline-group__subtitle headline-group__subtitle--bright">Оставьте заявку</div>
-          <div class="headline-group__title">Условия сотрудничества</div>
-          <div class="headline-group__text">Гибкие условия для дилеров и системных интеграторов</div>
+          <div class="grid">
+            <div class="card card--bg-bright card--without-border">
+              <div class="card__content card__content--small">
+                <div class="card__text-group">
+                  <div class="icon-block icon-block--opacity icon-block--small">
+                    <img src="assets/images/icon-offer-01.svg" style="transform: translateX(5%) translateY(5%)" alt="">
+                  </div>
+                  <div class="card__text card__text--main">Индивидуальные цены
+                  </div>
+
+                </div>
+                <div class="card__text">Гибкая ценовая политика в зависимости от объёма</div>
+              </div>
+            </div>
+
+            <div class="card card--bg-bright card--without-border">
+              <div class="card__content card__content--small">
+                <div class="card__text-group">
+                  <div class="icon-block icon-block--opacity icon-block--small">
+                    <img src="assets/images/icon-offer-02.svg" style="transform: translateX(5%) translateY(5%)" alt="">
+                  </div>
+                  <div class="card__text card__text--main">Техническая поддержка
+                  </div>
+
+                </div>
+                <div class="card__text">Выделенный менеджер и быстрые ответы</div>
+              </div>
+            </div>
+
+            <div class="card card--bg-bright card--without-border">
+              <div class="card__content card__content--small">
+                <div class="card__text-group">
+                  <div class="icon-block icon-block--opacity icon-block--small">
+                    <img src="assets/images/icon-offer-03.svg" style="transform: translateX(5%) translateY(5%)" alt="">
+                  </div>
+                  <div class="card__text card__text--main">Стабильные поставки
+                  </div>
+
+                </div>
+                <div class="card__text">Гарантированные сроки отгрузки и складской запас</div>
+              </div>
+            </div>
+
+            <div class="card card--bg-bright card--without-border">
+              <div class="card__content card__content--small">
+                <div class="card__text-group">
+                  <div class="icon-block icon-block--opacity icon-block--small">
+                    <img src="assets/images/icon-offer-04.svg" style="transform: translateX(5%) translateY(5%)" alt="">
+                  </div>
+                  <div class="card__text card__text--main">Маркетинг
+                  </div>
+
+                </div>
+                <div class="card__text">Фото, видео, брендированные материалы</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="headline-group">
+            <div class="headline-group__title">Хотите включить Filum в ассортимент или проектную поставку?</div>
+            <div class="headline-group__text">Мы свяжемся с вами в течение 24 часов и обсудим индивидуальные условия
+            </div>
+          </div>
+
+          <a href="#" class="button">Узнать условия</a>
+          <a href="#" class="button button--outline">Скачать презентацию</a>
         </div>
+      </section>
+    </div>
+    <div class="desktop-only">
+      <section class="container action">
+        <div class="container__content action__content">
+          <div class="headline-group">
+            <div class="headline-group__subtitle">Партнерство</div>
+            <div class="headline-group__title">Условия сотрудничества</div>
+            <div class="headline-group__text">Гибкие условия для дилеров и системных интеграторов</div>
+          </div>
 
-        <div class="grid">
-          <div class="card card--bg-bright card--without-border">
-            <div class="card__content card__content--small">
-              <div class="card__text-group">
-                <div class="icon-block icon-block--opacity icon-block--small">
-                  <img src="assets/images/icon-offer-01.svg" style="transform: translateX(5%) translateY(5%)" alt="">
-                </div>
-                <div class="card__text card__text--main">Индивидуальные цены
-                </div>
+          <div class="grid grid--4-desktop">
+            <div class="card card--without-border">
+              <div class="card__content card__content--small">
+                <div class="card__text-group">
+                  <div class="icon-block icon-block--bright-2 icon-block--small">
+                    <img src="assets/images/icon-offer-01-color.svg" style="transform: translateX(5%) translateY(5%)"
+                      alt="">
+                  </div>
+                  <div class="card__text card__text--main">Индивидуальные цены
+                  </div>
 
+                </div>
+                <div class="card__text">Гибкая ценовая политика в зависимости от объёма</div>
               </div>
-              <div class="card__text">Гибкая ценовая политика в зависимости от объёма</div>
+            </div>
+
+            <div class="card card--without-border">
+              <div class="card__content card__content--small">
+                <div class="card__text-group">
+                  <div class="icon-block icon-block--bright-2 icon-block--small">
+                    <img src="assets/images/icon-offer-02-color.svg" style="transform: translateX(5%) translateY(5%)"
+                      alt="">
+                  </div>
+                  <div class="card__text card__text--main">Техническая поддержка
+                  </div>
+
+                </div>
+                <div class="card__text">Выделенный менеджер и быстрые ответы</div>
+              </div>
+            </div>
+
+            <div class="card card--without-border">
+              <div class="card__content card__content--small">
+                <div class="card__text-group">
+                  <div class="icon-block icon-block--bright-2 icon-block--small">
+                    <img src="assets/images/icon-offer-03-color.svg" style="transform: translateX(5%) translateY(5%)"
+                      alt="">
+                  </div>
+                  <div class="card__text card__text--main">Стабильные поставки
+                  </div>
+
+                </div>
+                <div class="card__text">Гарантированные сроки отгрузки и складской запас</div>
+              </div>
+            </div>
+
+            <div class="card card--without-border">
+              <div class="card__content card__content--small">
+                <div class="card__text-group">
+                  <div class="icon-block icon-block--bright-2 icon-block--small">
+                    <img src="assets/images/icon-offer-04-color.svg" style="transform: translateX(5%) translateY(5%)"
+                      alt="">
+                  </div>
+                  <div class="card__text card__text--main">Маркетинг
+                  </div>
+
+                </div>
+                <div class="card__text">Фото, видео, брендированные материалы</div>
+              </div>
             </div>
           </div>
 
-          <div class="card card--bg-bright card--without-border">
-            <div class="card__content card__content--small">
-              <div class="card__text-group">
-                <div class="icon-block icon-block--opacity icon-block--small">
-                  <img src="assets/images/icon-offer-02.svg" style="transform: translateX(5%) translateY(5%)" alt="">
-                </div>
-                <div class="card__text card__text--main">Техническая поддержка
-                </div>
 
+          <div class="action__footer">
+            <div class="headline-group">
+              <div class="headline-group__subtitle headline-group__subtitle--bright">Оставьте заявку</div>
+              <div class="headline-group__title">Хотите включить Filum в ассортимент или проектную поставку?</div>
+              <div class="headline-group__text">Мы свяжемся с вами в течение 24 часов и обсудим индивидуальные условия
               </div>
-              <div class="card__text">Выделенный менеджер и быстрые ответы</div>
             </div>
-          </div>
-
-          <div class="card card--bg-bright card--without-border">
-            <div class="card__content card__content--small">
-              <div class="card__text-group">
-                <div class="icon-block icon-block--opacity icon-block--small">
-                  <img src="assets/images/icon-offer-03.svg" style="transform: translateX(5%) translateY(5%)" alt="">
-                </div>
-                <div class="card__text card__text--main">Стабильные поставки
-                </div>
-
-              </div>
-              <div class="card__text">Гарантированные сроки отгрузки и складской запас</div>
-            </div>
-          </div>
-
-          <div class="card card--bg-bright card--without-border">
-            <div class="card__content card__content--small">
-              <div class="card__text-group">
-                <div class="icon-block icon-block--opacity icon-block--small">
-                  <img src="assets/images/icon-offer-04.svg" style="transform: translateX(5%) translateY(5%)" alt="">
-                </div>
-                <div class="card__text card__text--main">Маркетинг
-                </div>
-
-              </div>
-              <div class="card__text">Фото, видео, брендированные материалы</div>
+            <div class="buttons">
+              <a href="#" class="button">Узнать условия</a>
+              <a href="#" class="button button--outline-bright">Скачать презентацию</a>
             </div>
           </div>
         </div>
-
-        <div class="headline-group">
-          <div class="headline-group__title">Хотите включить Filum в ассортимент или проектную поставку?</div>
-          <div class="headline-group__text">Мы свяжемся с вами в течение 24 часов и обсудим индивидуальные условия</div>
-        </div>
-
-        <a href="#" class="button">Узнать условия</a>
-        <a href="#" class="button button--outline">Скачать презентацию</a>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer class="container footer ">
     <div class="container__content footer__content">
-      <div class="grid grid--gap-big grid--2">
+      <div class="grid grid--gap-big grid--2 grid--12-desktop">
         <div class="footer__item footer__item--main">
           <a href="#"> <img src="assets/images/logo.svg" alt="Filum"></a>
           <div class="paragraph">

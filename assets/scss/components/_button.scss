@@ -15,11 +15,25 @@
         box-shadow: $shadow-orange;
     }
 
+    &--max-content {
+        padding-inline: 24px;
+        max-width: max-content;
+    }
+
     &--outline {
         background: none;
         color: $color-blue-1;
         border: 2px solid $color-blue-1;
 
+        &-bright {
+            background: none;
+            border: 2px solid $color-bright-1;
+            color: $color-bright-1;
+
+            &:hover {
+                box-shadow: $shadow;
+            }
+        }
 
         &:hover {
             box-shadow: $shadow-blue;
@@ -32,5 +46,22 @@
         &:hover {
             box-shadow: $shadow-blue;
         }
+    }
+
+
+
+    @include screen('desktop') {
+        padding-inline: 24px;
+        max-width: max-content;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: $size-base;
+
+    @include screen('desktop') {
+        flex-direction: row;
     }
 }

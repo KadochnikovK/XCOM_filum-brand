@@ -8,15 +8,30 @@
         margin-left: 11px;
         display: flex;
         gap: 28px;
-        padding-bottom: 24px;
+
 
         &:not(:nth-last-child(1)) {
             border-left: 2px solid $color-orange-1;
+            padding-bottom: 24px;
         }
+    }
+
+
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include screen('desktop') {
+            grid-column: span 2;
+        }
+
     }
 
     &__image {
         position: relative;
+        width: 100%;
 
         img {
             width: 100%;
@@ -24,6 +39,15 @@
             object-fit: cover;
             aspect-ratio: 1;
             border-radius: $radius-2;
+        }
+
+        @include screen('desktop') {
+            img {
+                height: 100%;
+                max-height: none;
+                aspect-ratio: auto;
+            }
+
         }
     }
 

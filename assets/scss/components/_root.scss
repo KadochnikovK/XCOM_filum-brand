@@ -1,3 +1,21 @@
+$breakpoints: (
+    'desktop': 1200px
+);
+
+
+@mixin screen($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Размер `#{$breakpoint}` не найден в карте $breakpoints.";
+    }
+}
+
+
 //цветаы
 $color-blue-1: #0050a5;
 $color-blue-2: #0c4392;
@@ -12,6 +30,7 @@ $color-bright-2: #e8f0f8;
 $color-bright-3: #e4edf6;
 $color-bright-4: #f2e4dc;
 $color-bright-5: #f0f5fb;
+$color-bright-6: #D1E0F0;
 
 $color-grey-1: #7da6d2;
 $color-grey-2: #777777;
@@ -34,6 +53,20 @@ $size-2xl: 2rem; // 32
 $size-3xl: 2.25rem; // 36
 $size-4xl: 2.5rem; // 40
 
+// @include screen('desktop') {
+//     $size-3xs: 0.625rem !global;
+//     $size-2xs: 0.6875rem !global;
+//     $size-xs: 0.75rem !global;
+//     $size-sm: 0.875rem !global;
+//     $size-md: 1rem !global;
+//     $size-base: 1.125rem !global;
+//     $size-lg: 1.25rem !global;
+//     $size-xl: 2rem !global;
+//     $size-2xl: 2.25rem !global;
+//     $size-3xl: 2.5rem !global;
+//     $size-4xl: 3rem !global;
+// }
+
 $shadow: 0px 3px 4px rgba(75, 36, 7, 0.15);
 $shadow-blue: 0px 2px 8.3px rgba(9, 42, 76, 0.35);
 $shadow-orange: 0px 8px 12px rgba(255, 107, 0, 0.35);
@@ -43,7 +76,10 @@ $radius: 32px;
 $radius-2: 16px;
 $radius-3: 8px;
 
+
 $max-width: 1440px;
+
+
 
 @mixin flex-center {
     display: flex;

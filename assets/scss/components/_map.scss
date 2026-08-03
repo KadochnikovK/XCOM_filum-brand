@@ -3,7 +3,11 @@
         img {
             width: 100%;
         }
+
+        @include screen('desktop') {
+            grid-column: span 2;
+        }
     }
 
-   
+
 }
