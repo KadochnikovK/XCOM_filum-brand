@@ -6,7 +6,9 @@
 
     box-shadow: $shadow-footer;
 
-
+&__content {
+    padding-block: 20px;
+}
 
     &__item {
         display: flex;
