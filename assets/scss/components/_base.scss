@@ -28,12 +28,10 @@ a {
             padding-block: 0;
         }
 
-        @include screen('desktop') {
-            padding: 112px 40px ;
+        @include screen("desktop") {
+            padding: 112px 40px;
         }
     }
-
-
 
     &--bg-blue {
         background-color: $color-blue-1;
@@ -41,9 +39,7 @@ a {
         * {
             color: $color-bright-1 !important;
             border-color: $color-bright-1 !important;
-
         }
-
     }
 
     &--bg-bright {
@@ -66,13 +62,12 @@ a {
     border-radius: $radius-2;
     width: max-content;
     position: relative;
+    align-items: center;
 
-    @include screen('desktop') {
+    @include screen("desktop") {
         border-width: 2px;
         padding: 16px;
     }
-
-
 
     &--bg-bright {
         background: $color-bright-3;
@@ -84,7 +79,6 @@ a {
         width: 168px;
         height: 210px;
         border: none;
-
     }
 
     &--without-bg {
@@ -111,8 +105,6 @@ a {
         gap: 6px;
     }
 
-
-
     &__text {
         font-size: $size-2xs;
         color: $color-grey-1;
@@ -132,13 +124,24 @@ a {
             font-size: $size-sm;
         }
 
-
         &--orange {
             color: $color-orange-1;
         }
 
         &--bright {
-            color: $color-bright-1
+            color: $color-bright-1;
+        }
+
+        @include screen("desktop") {
+            font-size: $size-sm;
+
+            &--main {
+                font-size: $size-md;
+            }
+
+            &--big {
+                font-size: $size-md;
+            }
         }
     }
 
@@ -165,7 +168,7 @@ a {
         grid-template-columns: repeat(2, 1fr);
 
         &-desktop {
-            @include screen('desktop') {
+            @include screen("desktop") {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -175,7 +178,7 @@ a {
         grid-template-columns: repeat(3, 1fr);
 
         &-desktop {
-            @include screen('desktop') {
+            @include screen("desktop") {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
@@ -185,7 +188,7 @@ a {
         grid-template-columns: repeat(4, 1fr);
 
         &-desktop {
-            @include screen('desktop') {
+            @include screen("desktop") {
                 grid-template-columns: repeat(4, 1fr);
             }
         }
@@ -195,24 +198,23 @@ a {
         grid-template-columns: repeat(12, 1fr);
 
         &-desktop {
-            @include screen('desktop') {
+            @include screen("desktop") {
                 grid-template-columns: repeat(12, 1fr);
             }
         }
     }
 
+    @include screen("desktop") {
+        gap: 20px;
+    }
+
     &--gap-big {
         gap: 20px;
 
-        @include screen('desktop') {
+        @include screen("desktop") {
             gap: 40px;
         }
     }
-
-    @include screen('desktop') {
-        gap: 20px;
-    }
-
 }
 
 .flex {
@@ -223,10 +225,7 @@ a {
     }
 
     gap: 20px;
-
-
 }
-
 
 .icon-block {
     border-radius: $radius-2;
@@ -238,15 +237,31 @@ a {
     aspect-ratio: 1;
     background: $color-grey-1;
 
+    img {
+        width: 30px;
+    }
+
     &--small {
         width: 28px;
         height: 28px;
         border-radius: $radius-3;
 
-        @include screen('desktop') {
+        img {
+            width: 12px;
+        }
+
+        @include screen("desktop") {
             width: 46px;
             height: 46px;
             border-radius: $radius-2;
+
+            img {
+                width: 24px;
+            }
+
+            &--small {
+                width: 18px;
+            }
         }
     }
 
@@ -263,6 +278,10 @@ a {
 
         .icon-block__circle {
             background: $color-orange-1;
+        }
+
+        @include screen("desktop") {
+           border-width: 2px; 
         }
     }
 
@@ -286,7 +305,7 @@ a {
     }
 
     &--opacity {
-        background: rgba(255, 255, 255, .1);
+        background: rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -304,7 +323,6 @@ a {
 }
 
 .divider {
-
     width: 100%;
     border-bottom: 2px solid $color-grey-1;
 }

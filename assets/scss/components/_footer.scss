@@ -3,26 +3,33 @@
     flex-direction: column;
     border-top: 2px solid $color-grey-1;
 
-
     box-shadow: $shadow-footer;
+    padding-block: 40px;
 
-&__content {
-    padding-block: 20px;
-}
+    &__content {
+        padding-block: 20px;
+        display: flex;
+        &--row {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
 
     &__item {
         display: flex;
         flex-direction: column;
         gap: 12px;
 
+        &--row {
+            flex-direction: row;
+        }
 
-
-        @include screen('desktop') {
+        @include screen("desktop") {
             grid-column: span 2;
         }
 
         &--main {
-            @include screen('desktop') {
+            @include screen("desktop") {
                 grid-column: span 6;
             }
         }

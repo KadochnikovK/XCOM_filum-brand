@@ -6,7 +6,6 @@
     &__title {
         font-weight: 700;
         font-size: $size-3xl;
-
         color: $color-blue-1;
     }
 
@@ -33,15 +32,12 @@
             height: calc($size-sm / 2);
             border-radius: 10pc;
             background: $color-grey-1;
-
-
         }
 
         &--bright {
             &::after {
                 background: $color-bright-1;
             }
-
         }
     }
 
@@ -52,9 +48,12 @@
         color: $color-blue-1;
     }
 
-    @include screen('desktop') {
+    @include screen("desktop") {
+        &--main {
+            gap: $size-xl;
+        }
         .headline-group__title {
-            font-size: $size-4xl;
+            font-size: $size-5xl;
         }
 
         .headline-group__subtitle {
@@ -62,7 +61,7 @@
         }
 
         .headline-group__text {
-            font-size: $size-base;
+            font-size: $size-xl;
         }
     }
 }
