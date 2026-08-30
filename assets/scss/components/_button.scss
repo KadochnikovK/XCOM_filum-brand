@@ -13,6 +13,7 @@
 
     &:hover {
         box-shadow: $shadow-orange;
+        color: $color-bright-1;
     }
 
     &--max-content {
@@ -32,10 +33,12 @@
 
             &:hover {
                 box-shadow: $shadow;
+                // color: $color-blue-1;
             }
         }
 
         &:hover {
+            color: $color-blue-1;
             box-shadow: $shadow-blue;
         }
     }
@@ -48,7 +51,7 @@
         }
     }
 
-    
+
 
 
 
