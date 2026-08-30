@@ -4,27 +4,16 @@
     border-top: 2px solid $color-grey-1;
     padding-bottom: 112px;
 
-<<<<<<< HEAD
     @include screen('desktop') {
         padding-block: 112px;
 
     }
 
-=======
->>>>>>> cb87e4d7d8c25fd863e80c5a451493c366eba29c
     box-shadow: $shadow-footer;
     padding-block: 40px;
 
     &__content {
         padding-block: 20px;
-<<<<<<< HEAD
-=======
-        display: flex;
-        &--row {
-            flex-direction: row;
-            justify-content: space-between;
-        }
->>>>>>> cb87e4d7d8c25fd863e80c5a451493c366eba29c
     }
 
     &__item {

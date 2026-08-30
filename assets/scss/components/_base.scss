@@ -33,11 +33,7 @@ a {
             padding-block: 0;
         }
 
-<<<<<<< HEAD
         @include screen('desktop') {
-=======
-        @include screen("desktop") {
->>>>>>> cb87e4d7d8c25fd863e80c5a451493c366eba29c
             padding: 112px 40px;
         }
     }
@@ -213,19 +209,12 @@ a {
         }
     }
 
-<<<<<<< HEAD
 
     @include screen('desktop') {
         gap: 20px;
     }
 
 
-=======
-    @include screen("desktop") {
-        gap: 20px;
-    }
-
->>>>>>> cb87e4d7d8c25fd863e80c5a451493c366eba29c
     &--gap-big {
         gap: 20px;
 
@@ -233,10 +222,6 @@ a {
             gap: 40px;
         }
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> cb87e4d7d8c25fd863e80c5a451493c366eba29c
 }
 
 .flex {
