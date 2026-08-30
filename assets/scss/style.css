@@ -691,6 +691,8 @@ a {
   position: absolute;
   inset: 0;
   background: linear-gradient(0deg, rgba(173, 217, 255, 0.6) 0%, rgba(0, 80, 165, 0) 50%);
+  border-radius: 20px;
+  bottom: -2% !important;
 }
 @media (min-width: 1200px) {
   .hero__image::after {
