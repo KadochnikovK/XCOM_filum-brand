@@ -1,17 +1,56 @@
 .header {
-    height: 64px;
-    @include flex-center;
+
+    flex-direction: column;
+    display: flex;
+    background-color: $color-bright-1;
+    position: relative;
+
+    &--bg {
+        background-color: $color-bright-5;
+    }
+
+
 
     &__content {
         width: 100%;
         display: flex;
         justify-content: space-between;
+
+        height: 64px;
+        display: flex;
+        align-items: center;
+        padding-block: 0;
+
+        &--full {
+            height: auto;
+        }
+
     }
 
     &__button-group {
         display: flex;
+
         justify-content: space-between;
         gap: $size-sm;
+        height: 44px;
+    }
+
+    &__link {
+        padding-inline: $size-base;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+
+        &--active {
+            border-bottom: 2px solid $color-orange-1;
+            color: $color-orange-1;
+        }
+
+        &:hover {
+            color: $color-orange-1
+        }
     }
 
     &__button {
@@ -23,16 +62,31 @@
         background: $color-blue-1;
         border-radius: 35px;
         width: max-content;
-        aspect-ratio: 1;
+
         transition: all .3s;
+        padding: $size-xs;
+        color: $color-bright-1;
+        gap: $size-xs;
+        font-weight: 500;
 
         &:hover {
             box-shadow: $shadow-blue;
         }
 
+        &--circle {
+            aspect-ratio: 1;
+            padding: 0;
+        }
+
         &--outline {
             background: $color-bright-4;
             border: 1px solid $color-blue-1;
+        }
+
+        &--grey {
+            background: $color-bright-3;
+
+
         }
     }
 }

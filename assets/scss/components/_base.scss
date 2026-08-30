@@ -10,6 +10,11 @@ body {
 
 a {
     text-decoration: none;
+    transition: all .3s;
+
+    &:hover {
+        color: $color-orange-1;
+    }
 }
 
 .container {
@@ -29,7 +34,7 @@ a {
         }
 
         @include screen('desktop') {
-            padding: 112px 40px ;
+            padding: 112px 40px;
         }
     }
 
@@ -201,16 +206,18 @@ a {
         }
     }
 
+
+    @include screen('desktop') {
+        gap: 20px;
+    }
+
+
     &--gap-big {
         gap: 20px;
 
         @include screen('desktop') {
             gap: 40px;
         }
-    }
-
-    @include screen('desktop') {
-        gap: 20px;
     }
 
 }
@@ -248,6 +255,12 @@ a {
             height: 46px;
             border-radius: $radius-2;
         }
+    }
+
+    &--xs {
+        width: 28px;
+        height: 28px;
+        border-radius: $radius-3;
     }
 
     &__circle {
@@ -307,4 +320,8 @@ a {
 
     width: 100%;
     border-bottom: 2px solid $color-grey-1;
+
+    &--bright {
+        border-color: $color-bright-3;
+    }
 }

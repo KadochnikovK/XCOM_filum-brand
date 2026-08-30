@@ -38,8 +38,11 @@
         }
 
         &--bright {
+            border-color: $color-bright-1;
+
             &::after {
                 background: $color-bright-1;
+
             }
 
         }

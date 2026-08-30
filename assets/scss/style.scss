@@ -11,6 +11,9 @@
 @import "./components/footer";
 @import "./components/menu";
 @import "./components/action";
+@import "./components/input";
+@import "./components/hamburger";
+@import "./components/links";
 
 .mobile-only {
     @include screen('desktop') {
@@ -24,5 +27,17 @@
 
     @include screen('desktop') {
         display: block;
+    }
+}
+
+@each $name, $value in $colors {
+    .text-#{$name} {
+        color: $value;
+    }
+}
+
+@each $name, $value in $colors {
+    .bg-#{$name} {
+        background: $value;
     }
 }

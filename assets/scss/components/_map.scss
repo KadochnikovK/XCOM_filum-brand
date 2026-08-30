@@ -1,11 +1,14 @@
 .map {
     &__image {
+        position: relative;
+
         img {
             width: 100%;
         }
 
         @include screen('desktop') {
             grid-column: span 2;
+            margin-left: 10%;
         }
     }
 

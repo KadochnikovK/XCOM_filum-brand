@@ -40,7 +40,30 @@ $gradient-1: linear-gradient(155.23deg, #bfe1ff 8.5%, #bfe0ff 41.7%, #add9ff 91.
 $gradient-2: linear-gradient(0deg, rgba(173, 217, 255, 0.6) 0%, rgba(0, 80, 165, 0) 50%);
 $gradient-3: linear-gradient(135deg, #0050A5 0%, #003880 100%);
 
+$colors: (
+    'blue-1': $color-blue-1,
+    'blue-2': $color-blue-2,
+    'blue-3': $color-blue-3,
+    'orange-1': $color-orange-1,
+    'orange-2': $color-orange-2,
+    'orange-3': $color-orange-3,
+    'bright-1': $color-bright-1,
+    'bright-2': $color-bright-2,
+    'bright-3': $color-bright-3,
+    'bright-4': $color-bright-4,
+    'bright-5': $color-bright-5,
+    'bright-6': $color-bright-6,
+    'grey-1': $color-grey-1,
+    'grey-2': $color-grey-2,
+    'grey-3': $color-grey-3
+);
+
+
+
+
+
 //размеры
+
 $size-3xs: 0.5625rem; // 9
 $size-2xs: 0.625rem; // 10
 $size-xs: 0.6875rem; // 11
@@ -53,19 +76,45 @@ $size-2xl: 2rem; // 32
 $size-3xl: 2.25rem; // 36
 $size-4xl: 2.5rem; // 40
 
-// @include screen('desktop') {
-//     $size-3xs: 0.625rem !global;
-//     $size-2xs: 0.6875rem !global;
-//     $size-xs: 0.75rem !global;
-//     $size-sm: 0.875rem !global;
-//     $size-md: 1rem !global;
-//     $size-base: 1.125rem !global;
-//     $size-lg: 1.25rem !global;
-//     $size-xl: 2rem !global;
-//     $size-2xl: 2.25rem !global;
-//     $size-3xl: 2.5rem !global;
-//     $size-4xl: 3rem !global;
-// }
+
+$sizes: (
+    '3xs': $size-3xs,
+    '2xs': $size-2xs,
+    'xs': $size-xs,
+    'sm': $size-sm,
+    'md': $size-md,
+    'base': $size-base,
+    'lg': $size-lg,
+    'xl': $size-xl,
+    '2xl': $size-2xl,
+    '3xl': $size-3xl,
+    '4xl': $size-4xl
+);
+
+
+@each $name, $size in $sizes {
+    .mobile-#{$name} {
+        font-size: $size;
+    }
+}
+
+
+@include screen('desktop') {
+    @each $name, $size in $sizes {
+        .desktop-#{$name} {
+            font-size: $size;
+        }
+    }
+}
+
+$font-weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+
+@each $weight in $font-weights {
+    .weight-#{$weight} {
+        font-weight: $weight;
+    }
+}
 
 $shadow: 0px 3px 4px rgba(75, 36, 7, 0.15);
 $shadow-blue: 0px 2px 8.3px rgba(9, 42, 76, 0.35);
