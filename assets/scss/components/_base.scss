@@ -6,6 +6,12 @@
 
 body {
     background: $color-bright-5;
+
+    margin-bottom: 66px;
+
+    @include screen('desktop') {
+        margin-bottom: 0;
+    }
 }
 
 a {
@@ -245,7 +251,7 @@ a {
     background: $color-grey-1;
 
     img {
-        width: 30px;
+        // width: 30px;
     }
 
     &--small {
@@ -294,7 +300,7 @@ a {
         }
 
         @include screen("desktop") {
-           border-width: 2px; 
+            border-width: 2px;
         }
     }
 
