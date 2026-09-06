@@ -22,7 +22,7 @@
     &__image {
         position: relative;
         width: 100%;
-        max-height: 30vh;
+        max-height: 100%;
 
         &::after {
             content: "";
@@ -36,6 +36,9 @@
         }
 
         @include screen("desktop") {
+
+            max-height: auto;
+
             &::after {
                 background: linear-gradient(0deg, rgba(148, 197, 242, 0.3) 13.39%, rgba(148, 197, 242, 0.05) 66.96%);
                 bottom: 0;
