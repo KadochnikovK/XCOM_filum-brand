@@ -1036,6 +1036,12 @@ a {
 }
 
 @media (min-width: 1200px) {
+  .certificate .card__text--main {
+    color: #0050a5;
+  }
+}
+
+@media (min-width: 1200px) {
   .mobile-only {
     display: none;
   }
