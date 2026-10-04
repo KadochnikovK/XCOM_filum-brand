@@ -3,7 +3,7 @@
     border: 2px solid $color-grey-1;
     width: 100%;
     overflow: hidden;
-    background: $color-bright-3;
+    background: $color-bright-1;
     position: relative;
 
     &--row {
@@ -95,8 +95,8 @@
     }
 
     &__label {
-        background: $color-bright-4;
-        color: $color-orange-1;
+        background: $color-bright-3;
+        color: $color-blue-1;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -123,6 +123,7 @@
 
     &__text {
         font-size: $size-md;
+        position: relative;
 
         &--main {
             font-size: $size-xl;

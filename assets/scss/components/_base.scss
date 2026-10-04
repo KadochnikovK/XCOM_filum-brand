@@ -54,7 +54,7 @@ a {
     }
 
     &--bg-bright {
-        background: $color-bright-2;
+        background: $color-bright-1;
     }
 }
 
@@ -79,6 +79,11 @@ a {
         border-width: 2px;
         padding: 16px;
     }
+
+    &--bg-white {
+        background: $color-bright-1;
+    }
+
 
     &--bg-bright {
         background: $color-bright-3;
@@ -245,10 +250,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 56px;
-    height: 56px;
+    // width: 56px;
+    // height: 56px;
     aspect-ratio: 1;
-    background: $color-grey-1;
+    background: $color-bright-1;
 
     img {
         // width: 30px;
@@ -291,12 +296,12 @@ a {
         border-radius: 10pc;
     }
 
-    &--orange {
-        background: $color-bright-4;
-        border: 1px solid $color-orange-1;
+    &--grey {
+        background: $color-bright-1 !important;
+        border: 1px solid $color-grey-1;
 
         .icon-block__circle {
-            background: $color-orange-1;
+            background: $color-grey-1;
         }
 
         @include screen("desktop") {
@@ -332,11 +337,11 @@ a {
     position: absolute;
     bottom: 0;
     right: 0;
-    font-weight: 900;
-    font-size: 120px;
+    font-weight: 700;
+    font-size: 140px;
     line-height: 100px;
-    color: $color-bright-1;
-    text-shadow: $shadow;
+    color: $color-bright-2;
+    // text-shadow: $shadow;
     transform: translateX(40%);
     // display: flex;
 }
@@ -347,5 +352,11 @@ a {
 
     &--bright {
         border-color: $color-bright-3;
+    }
+}
+
+.order-1-desktop {
+    @include screen('desktop') {
+        order: 1;
     }
 }
